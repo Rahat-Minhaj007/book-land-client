@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Eloquent Javascript",
+        "img": "https://i.ibb.co/8MSHzCf/image-19.png",
+        "price": 149,
+        "author": "Marzin Haverbeke"
+    },
+    {
+        "id": 2,
+        "name": "Learning React",
+        "img": "https://i.ibb.co/ygd8PJW/image-20.png",
+        "price": 178,
+        "author": "Alex Banks & Eve Porcello"
+    },
+    {
+        "id": 3,
+        "name": "The Road to React",
+        "img": "https://i.ibb.co/zNtF686/image-21.png",
+        "price": 205,
+        "author": "Robin Wieruch"
+    },
+    {
+        "id": 4,
+        "name": "Python Crash Course",
+        "img": "https://i.ibb.co/DgnJvQt/image-29.png",
+        "price": 277,
+        "author": "Eric Matthes"
+    },
+    {
+        "id": 5,
+        "name": "Effective Typescript",
+        "img": "https://i.ibb.co/s5BGNLY/image-23.png",
+        "price": 169,
+        "author": "Dan Vanderkam"
+    },
+    {
+        "id": 6,
+        "name": "Javascript Everywhere",
+        "img": "https://i.ibb.co/GQSNTQk/image-25.png",
+        "price": 231,
+        "author": "Adam D.Scottark Lutz"
+    }
+]

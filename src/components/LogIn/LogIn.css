@@ -1,0 +1,103 @@
+.login {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+
+.login .login-input-field {
+    margin-bottom: 10px;
+}
+
+.login .login-input-field input[type="text"], .login textarea {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+.login .login-input-field input[type="password"], .login textarea {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.login textarea {
+    resize: none;
+    height: 80px;
+}
+
+.login .button input[type="submit"] {
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+   
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.anotherLoginBtn{
+            color : #fff;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;;
+            margin:10px 0;
+            border:none;
+            outline : none;
+            cursor:pointer;
+}
+.forClr1{
+    background-color: rgb(223, 0, 0);
+}
+.forClr2{
+    background-color: rgb(0, 0, 197);
+}
+.forClr1:hover{
+    background-color: rgb(255, 34, 34);
+}
+.forClr2:hover{
+    background-color: rgb(0, 0, 245);
+}
+hr{
+    margin-top: 30px;
+    width:90%;
+}
+.or{
+   background: #fff;
+   width: 30%;
+   margin: -30px auto 10px;
+}
+@media(max-width: 768px){
+    .login {
+        position: absolute;
+        top: 75%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        max-width: 290px;
+        width: 100%;
+        background: #fff;
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+    }
+}
