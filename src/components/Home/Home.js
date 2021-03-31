@@ -10,7 +10,7 @@ import Book from '../Book/Book';
 const Home = () => {
     const [data,setData] = useState([])
     useEffect(() => {
-            fetch('http://localhost:5055/book')
+            fetch('https://fathomless-temple-21238.herokuapp.com/book')
             .then(res => res.json())
             .then(data => setData(data))
     },[])

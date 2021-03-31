@@ -10,7 +10,7 @@ const CheckOut = () => {
   const { _id } = useParams();
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/book")
+    fetch("https://fathomless-temple-21238.herokuapp.com/book")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -55,10 +55,12 @@ const CheckOut = () => {
       <div className="col-md-3 checkImg">
         <Card style={{ width: "18rem", border: "none", background: "none" }}>
           <Card.Body
+            className="cardBody"
             style={{
               backgroundColor: "whiteSmoke",
               borderRadius: "5px",
               border: "none",
+
             }}
           >
             <Card.Img

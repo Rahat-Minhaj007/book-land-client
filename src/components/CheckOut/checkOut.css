@@ -7,11 +7,16 @@
     width:1050px;
     margin-top:200px;
     margin-left:20px;
-    height:250px;
+    height:300px;
 
     
     
 }
 .checkImg{
     margin-top:200px;
+   
+}
+.cardBody{
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(255, 230, 131);
 }
