@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const OrderDetail = (props) => {
     const {name,email,products,orderTime,quantity} = props.OrderDetails;
     
+    
     return (
         <div className="mt-5 ml-5 mb-4 col-md-3">
         <Card style={{ width: "18rem", border: "none", background: "none" }}>

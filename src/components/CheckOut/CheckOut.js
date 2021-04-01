@@ -23,7 +23,7 @@ const CheckOut = () => {
     (pd) => parseInt(pd._id) === parseInt(_id)
   );
 const handleOrder = () => {
-  const orderDetail = {...loggedInUser, products:checkOutProduct,quantity:1,orderTime: new Date ()};
+  const orderDetail = {...loggedInUser, products:checkOutProduct,quantity:1,orderTime: new Date ().toString("dddd, mmmm dS, yyyy, g:i A TT")};
   const url = `https://fathomless-temple-21238.herokuapp.com/addOrder`;
 
   fetch(url, {
@@ -60,18 +60,19 @@ const handleOrder = () => {
         </div>
         <hr />
         <div className="d-flex justify-content-between">
-          <h5>Total</h5>
+          <h5>Total Price</h5>
+          
           <h5>$ {checkOutProduct?.price}</h5>
         </div>
         <div>
-          <Link  class="btn d-flex justify-content-end" to="/order">
+          {/* <Link  class="btn d-flex justify-content-end mt-2" to="/order"> */}
             <button
-              class="btn btn-dark"
+              class="btn btn-dark d-flex justify-content-end mt-2"
               onClick={handleOrder}
             >
               <strong>Check Out</strong>
             </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
       <div className="col-md-3 checkImg">

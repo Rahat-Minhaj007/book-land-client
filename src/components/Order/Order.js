@@ -1,4 +1,4 @@
-import { UserContext } from "../../App";
+import {  UserContext } from "../../App";
 import React, { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -15,10 +15,11 @@ const Order = () => {
   }, []);
 
   const specificUserOrder = orderData.filter((user) => user.email === email);
+  
 
   return (
     <div >
-      <h1 className="text-center">Thank You For Your Shopping With Us </h1>
+      <h1 className="text-center">Your Order's Overview</h1>
       <div className="row d-flex justify-content-center">
         {specificUserOrder.map((userOrderDetail) => (
           <OrderDetail OrderDetails={userOrderDetail}></OrderDetail>

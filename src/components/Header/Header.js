@@ -33,7 +33,7 @@ const Header = () => {
                         
                         <ReactBootStrap.NavDropdown style={link} title="ADMIN" id="basic-nav-dropdown">
                          <ReactBootStrap.NavDropdown.Item ><Link style={link} to="/addBook">Add Book</Link></ReactBootStrap.NavDropdown.Item>
-                         <ReactBootStrap.NavDropdown.Item style={link} >Manage Book</ReactBootStrap.NavDropdown.Item>
+                         <ReactBootStrap.NavDropdown.Item style={link} ><Link style={link} to="/manageBook">Manage Book</Link></ReactBootStrap.NavDropdown.Item>
         
                         </ReactBootStrap.NavDropdown>
                       

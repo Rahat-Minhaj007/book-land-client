@@ -17,8 +17,8 @@
     padding: 10px;
     text-align: center;
     width: 100px;
-    background: #fece0c;
-    color: #332902;
+    background: #8d8d8d;
+    color: #ffffff;
     text-transform: uppercase;
     margin-left: 30px;
     font-weight: bold;
@@ -55,4 +55,8 @@
 #page-content-wrapper {
     min-width: 0;
     width: 100%;
+}
+.login  input[type="submit"]:hover{
+    background-color: #ffcc00;
+    color: black;
 }
