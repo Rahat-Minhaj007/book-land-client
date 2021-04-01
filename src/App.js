@@ -13,6 +13,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import { createContext, useState } from 'react';
 import AddBook from './components/AddBook/AddBook';
 import Order from './components/Order/Order';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 
@@ -31,15 +32,15 @@ function App() {
         <Route path="/home">
          <Home></Home>
         </Route>
-        <Route path="/addBook">
+        <PrivateRoute path="/addBook">
           <AddBook></AddBook>
-        </Route>
-        <Route path="/order">
+        </PrivateRoute>
+        <PrivateRoute path="/order">
           <Order></Order>
-        </Route>
-        <Route path="/checkOut/:_id">
+        </PrivateRoute>
+        <PrivateRoute path="/checkOut/:_id">
           <CheckOut></CheckOut>
-        </Route>
+        </PrivateRoute>
         <Route path="/login">
           <LogIn></LogIn>
         </Route>

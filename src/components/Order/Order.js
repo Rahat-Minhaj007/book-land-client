@@ -9,7 +9,7 @@ const Order = () => {
   const { email } = loggedInUser;
   const [orderData, setOrderData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/order")
+    fetch("https://fathomless-temple-21238.herokuapp.com/order")
       .then((res) => res.json())
       .then((data) => setOrderData(data));
   }, []);

@@ -24,7 +24,7 @@ const CheckOut = () => {
   );
 const handleOrder = () => {
   const orderDetail = {...loggedInUser, products:checkOutProduct,quantity:1,orderTime: new Date ()};
-  const url = `http://localhost:5055/addOrder`;
+  const url = `https://fathomless-temple-21238.herokuapp.com/addOrder`;
 
   fetch(url, {
     method: "POST",
