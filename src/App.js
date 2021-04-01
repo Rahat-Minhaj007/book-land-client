@@ -12,6 +12,7 @@ import LogIn from './components/LogIn/LogIn';
 import CheckOut from './components/CheckOut/CheckOut';
 import { createContext, useState } from 'react';
 import AddBook from './components/AddBook/AddBook';
+import Order from './components/Order/Order';
 
 
 
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path="/addBook">
           <AddBook></AddBook>
+        </Route>
+        <Route path="/order">
+          <Order></Order>
         </Route>
         <Route path="/checkOut/:_id">
           <CheckOut></CheckOut>

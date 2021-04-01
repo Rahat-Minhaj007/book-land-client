@@ -15,7 +15,7 @@ const AddBook = () => {
       imageURL: imageURL,
     };
 
-    const url = `http://localhost:5055/addBook`;
+    const url = `https://fathomless-temple-21238.herokuapp.com/addBook`;
 
     fetch(url, {
       method: "POST",

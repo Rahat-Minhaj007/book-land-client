@@ -1,12 +1,16 @@
-import React from "react";
 import { useParams } from "react-router";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./checkOut.css";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { UserContext } from '../../App';
+import React, { useContext } from 'react';
 
 const CheckOut = () => {
+
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+
   const { _id } = useParams();
   const [product, setProduct] = useState([]);
   useEffect(() => {
@@ -18,6 +22,24 @@ const CheckOut = () => {
   const checkOutProduct = product.find(
     (pd) => parseInt(pd._id) === parseInt(_id)
   );
+const handleOrder = () => {
+  const orderDetail = {...loggedInUser, products:checkOutProduct,quantity:1,orderTime: new Date ()};
+  const url = `http://localhost:5055/addOrder`;
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(orderDetail),
+  })
+  .then(res => res.json())
+  .then (data => {
+    if(data){
+      alert('your order placed successfully');
+    }
+  })
+}
 
   return (
     <div className=" row d-flex justify-content-center ">
@@ -42,10 +64,10 @@ const CheckOut = () => {
           <h5>$ {checkOutProduct?.price}</h5>
         </div>
         <div>
-          <Link  class="btn d-flex justify-content-end" to="/orders">
+          <Link  class="btn d-flex justify-content-end" to="/order">
             <button
               class="btn btn-dark"
-            
+              onClick={handleOrder}
             >
               <strong>Check Out</strong>
             </button>
