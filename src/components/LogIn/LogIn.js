@@ -133,7 +133,7 @@ const LogIn = () => {
     return (
         <div >
             <div className="login">
-                <h2>RIDE MAMA</h2>
+                <h2>BOOK LAND</h2>
 
                 <form onSubmit={handleSubmit}>
                     <div className="login-input-field">

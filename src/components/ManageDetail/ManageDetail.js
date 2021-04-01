@@ -8,7 +8,7 @@ const ManageDetail = (props) => {
 
     const handleDelete = (id) => {
         console.log(id);
-        if(window.confirm('Are You Want to Delete')){
+        if(window.confirm('Do you want to delete this item?')){
 
         
                 fetch(`https://fathomless-temple-21238.herokuapp.com/delete/${id}`,{
