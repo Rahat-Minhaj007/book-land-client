@@ -11,7 +11,7 @@ const ManageDetail = (props) => {
         if(window.confirm('Are You Want to Delete')){
 
         
-                fetch(`http://localhost:5055/delete/${id}`,{
+                fetch(`https://fathomless-temple-21238.herokuapp.com/delete/${id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())

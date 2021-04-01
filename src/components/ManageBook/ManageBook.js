@@ -15,7 +15,7 @@ const ManageBook = () => {
       .then((data) => setManageData(data));
   }, []);
 
-//   const specificUserManageBook = manageData.filter((user) => user.email === email);
+
   
 
   return (
