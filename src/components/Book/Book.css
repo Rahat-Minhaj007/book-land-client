@@ -1,0 +1,31 @@
+.team:hover{
+    transform: rotateX(360deg);
+    transition:1s;
+}
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.team{
+    animation:transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.home{
+    animation:transitionIn 0.75s;
+}

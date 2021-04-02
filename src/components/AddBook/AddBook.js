@@ -42,10 +42,10 @@ const AddBook = () => {
       });
   };
   return (
-    <div className="mt-5">
+    <div className="mt-5 ">
       
       <h1 className="text-center">Make Your Awesome Book List...</h1>
-      <form className="mt-5 login " onSubmit={handleSubmit(onSubmit)}>
+      <form className="mt-5 login addBook" onSubmit={handleSubmit(onSubmit)}>
         <div className="login-input-field">
           {/* <h6>Book Name</h6> */}
           <input

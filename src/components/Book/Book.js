@@ -1,11 +1,14 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import './Book.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Book = (props) => {
   const { name, imageURL, price,_id, author } = props.book;
   return (
-    <div className="mt-5 ml-5 mb-4 col-md-3">
+    <div className="mt-5 team ml-5 mb-4 col-md-3">
       <Card style={{ width: "18rem", border: "none", background: "none" }}>
         <Card.Body
           style={{
@@ -24,7 +27,7 @@ const Book = (props) => {
                 class="btn"
                 style={{ backgroundColor: "black", color: "white" }}
               >
-                <strong>Buy Now</strong>
+                <FontAwesomeIcon icon={faShoppingCart} /> <strong>Buy Now</strong>
               </button>
             </Link>
           </div>

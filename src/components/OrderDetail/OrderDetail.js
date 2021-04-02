@@ -10,6 +10,7 @@ const OrderDetail = (props) => {
         <div className="mt-5 ml-5 mb-4 col-md-3">
         <Card style={{ width: "18rem", border: "none", background: "none" }}>
           <Card.Body
+          className="cardBody"
             style={{
               backgroundColor: "whiteSmoke",
               borderRadius: "5px",

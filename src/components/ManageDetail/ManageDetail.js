@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const ManageDetail = (props) => {
     const {name, imageURL, price,_id,author} = props.manageDetails;
@@ -26,7 +26,9 @@ const ManageDetail = (props) => {
         <div className="mt-5 ml-5 mb-4 col-md-3">
         <Card style={{ width: "18rem", border: "none", background: "none" }}>
           <Card.Body
+          className="cardBody"
             style={{
+              
               backgroundColor: "whiteSmoke",
               borderRadius: "5px",
               border: "none",

@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className="mt-2  home">
             
-            <h1 className="text-center">Drive the road of knowledge with the best collection of books.</h1>
+            <h1  className="text-center font">Drive the road of knowledge with the best collection of books.</h1>
             <div className=" d-flex justify-content-center mt-5">
                 <Form>
                     <Form.Label htmlFor="inlineFormInputName" srOnly></Form.Label>

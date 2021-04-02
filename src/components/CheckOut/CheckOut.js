@@ -36,13 +36,17 @@ const handleOrder = () => {
   .then(res => res.json())
   .then (data => {
     if(data){
-      alert('your order placed successfully');
+      alert('Your order placed successfully');
     }
   })
 }
 
   return (
-    <div className=" row d-flex justify-content-center ">
+    <div>
+      <h1 className="text-center">CHECKOUT</h1>
+   
+    <div className=" row d-flex justify-content-center check">
+      
       <div className="checkOut col-md-5">
         <div
           style={{ color: "grey" }}
@@ -67,7 +71,7 @@ const handleOrder = () => {
         <div>
           {/* <Link  class="btn d-flex justify-content-end mt-2" to="/order"> */}
             <button
-              class="btn btn-dark d-flex justify-content-end mt-2"
+              class="btn btn-dark"
               onClick={handleOrder}
             >
               <strong>Check Out</strong>
@@ -97,6 +101,7 @@ const handleOrder = () => {
           </Card.Body>
         </Card>
       </div>
+    </div>
     </div>
   );
 };
